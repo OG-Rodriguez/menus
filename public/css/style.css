@@ -2,18 +2,23 @@ nav ul {
     list-style: none;
     padding: 0;
 }
+
 nav ul li {
     display: inline;
     margin-right: 15px;
 }
+
 nav a {
     text-decoration: none;
     color: black;
 }
-.active {
+
+nav a.active { /* More specific selector */
     font-weight: bold;
     color: blue;
+    background-color: #f0f0f0;
 }
+
 footer {
     text-align: center;
     padding: 10px;
@@ -21,4 +26,9 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+.active {
+    background-color: #f0f0f0;
+    font-weight: bold;
 }

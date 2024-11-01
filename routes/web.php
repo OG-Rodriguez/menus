@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,11 +14,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/', [MenuController::class, 'home'])->name('home');
-Route::get('/photos', [MenuController::class, 'photos'])->name('photos');
-Route::get('/contact', [MenuController::class, 'contact'])->name('contact');
+Route::get('/', function () {
+    return view('landing', ['active' => 'landing']);
+})->name('landing');
+
+Route::get('/home', function () {
+    return view('home', ['active' => 'home']);
+})->name('home');
+
+Route::get('/photos', function () {
+    return view('photos', ['active' => 'photos']);
+})->name('photos');
+
+Route::get('/contact', function () {
+    return view('contact', ['active' => 'contact']);
+})->name('contact');
+
+
+
+
 

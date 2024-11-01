@@ -6,16 +6,19 @@ use Illuminate\Http\Request;
 
 class MenuController extends Controller
 {
-    public function home() {
-        return view('home', ['active' => 'home']);
+    public function home()
+    {
+        return view('home');
     }
 
-    public function photos() {
-        return view('photos', ['active' => 'photos']);
+    public function photos()
+    {
+        return view('photos');
     }
 
-    public function contact() {
-        return view('contact', ['active' => 'contact']);
+    public function contact()
+    {
+        return view('contact');
     }
 }
 

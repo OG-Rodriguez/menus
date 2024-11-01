@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layouts.app')
 
 @section('title', 'Photos')
 
@@ -11,3 +11,5 @@
         <img src="https://via.placeholder.com/150" alt="Sample Photo 3">
     </div>
 @endsection
+
+

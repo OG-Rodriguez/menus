@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layouts.app')
 
 @section('title', 'Contact')
 
@@ -18,3 +18,6 @@
         <button type="submit">Send</button>
     </form>
 @endsection
+
+
+
